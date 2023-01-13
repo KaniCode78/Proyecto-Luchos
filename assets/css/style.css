@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+/* Definicion de tipo de letra para la pagina */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Definiendo caracteristicas del header */
+.header-wrapper {
+    display: grid;
+    background-color: #04BFAD;
+    color: #223D40;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem;
+    position: center center;
+    width: 100%;
+}
+
+.imagen-full {
+    width: 100%;
+}
+
+.logo {
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-logo {
+    padding: 10px;
+    text-align: left;
+}
+
+.header-tittle {
+    padding: 10px;
+    text-align: center;
+    align-self: center center;
+    font-size: large;
+}
+
+.header-input {
+    padding: 10px;
+    text-align: end;
+    align-self: center;
+
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+/* Inicia el cuerpo de la pagina */
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #223D40;
+}
+
+.header-second {
+    padding: 10px;
+    text-align: center;
+    align-self: center center;
+    font-size: large;
+}
+
+.hero {
+
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #223D40;
+    background-image: url("../Media/banner.jpg");
+    background-color: #223D40;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat, repeat;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+.hero .btn {
+    display: block;
+    width: 200px;
+
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #223D40;
+    text-decoration: none;
+    font-size: 1em;
+
+    border: 5px solid #BFBFBF;
+    border-radius: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    height: 350px;
+    width: 100%;
+}
+
+.product-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+.additional-wrapper {
+    display: grid;
+    padding: 10px;
+    background-color: #04BFAD;
+    color: #223D40;
+}
+
+footer {
+    margin-top: 0rem;
+    background-color: #04BFAD;
+    color: #223D40;
+    text-align: center;
+}
+
+.social-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    align-self: center;
+}
+
+.network-img {
+    height: 4rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 5rem 5rem;
+        position: relative;
+    }
+
+    .header-logo,
+    .header-title,
+    .header-input {
+        text-align: center;
+    }
+
+
+    .card img {
+        height: 250px;
+    }
+
+
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+}
