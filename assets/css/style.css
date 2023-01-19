@@ -13,7 +13,7 @@
     display: grid;
     background-color: #04BFAD;
     color: #223D40;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 80px 200px auto;
     grid-template-rows: 5rem;
     position: center center;
     width: 100%;
@@ -35,7 +35,7 @@
 
 .header-tittle {
     padding: 10px;
-    text-align: center;
+    text-align: left;
     align-self: center center;
     font-size: large;
 }
@@ -149,6 +149,10 @@ footer {
     background-color: #04BFAD;
     color: #223D40;
     text-align: center;
+}
+
+.footer-p {
+    font-size: 30px;
 }
 
 .social-wrapper {
