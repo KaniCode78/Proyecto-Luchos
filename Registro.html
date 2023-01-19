@@ -16,10 +16,40 @@
         </div>
 
         <div class="header-tittle">
-            <h1>Hero PET</h1>
+            <h1>Hero Pet</h1>
         </div>
 
         <div class="header-input">
             <input type="text" placeholder="Buscar">
         </div>
     </header>
+
+    <body>
+        <div class="form-styles" scr="estilo">
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <p>Informacion Personal</p>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="Apellido">apellido</label>
+                        <input type="text" id="apellido" name="last_name">
+                    </li>
+                    <li>
+                        <p>Informacion de Contacto</p>
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </li>
+                    <li>
+                        <label for="celular">Celular</label>
+                        <input type="celular" id="cel" name="user_cel">
+                    </li>
+                    <li class="button">
+                        <button type="submit">Crea tu Registro</button>
+                    </li>
+                </ul>
+            </form>
+          </div>
+    </body>
