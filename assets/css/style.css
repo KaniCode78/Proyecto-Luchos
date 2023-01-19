@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 
 /* Definicion de tipo de letra para la pagina */
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Kanit', sans-serif;
-}
+  }
 
 /* Definiendo caracteristicas del header */
 .header-wrapper {
     display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    grid-template-rows: 5rem;
+    position: left center right;
+    width: 100%;
     background-color: #04BFAD;
     color: #223D40;
-    grid-template-columns: 80px 200px 400px;
-    grid-template-rows: 5rem;
-    position: center center right;
-    width: 100%;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .imagen-full {
@@ -42,7 +44,7 @@
 
 .header-input {
     padding: 10px;
-    text-align: end;
+    text-align: right;
     align-self: center;
 
 }
@@ -58,6 +60,7 @@ input[type=text] {
     display: grid;
     grid-template-columns: 1fr;
     color: #223D40;
+    font-family: 'Kanit', sans-serif;
 }
 
 .header-second {
