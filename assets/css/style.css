@@ -8,7 +8,8 @@
     font-family: 'Hind Madurai', sans-serif;
 }
 
-/* Definiendo caracteristicas del header */
+/* Header */
+
 .header-wrapper {
     display: grid;
     grid-template-columns: 80px 1fr 1fr 1fr;
@@ -31,15 +32,13 @@
 .header-logo {
     cursor: pointer;
     padding: 10px;
-    text-align: left;
 }
 
 .header-tittle {
     padding: 10px;
     cursor: pointer;
     display: inline;
-    text-align: left;
-    align-self: left left;
+    text-align: center;
     font-size: large;
     margin: auto;
 }
@@ -57,7 +56,6 @@
 
 }
 
-
 .header-input {
     padding: 10px;
     display: inline;
@@ -67,7 +65,6 @@
     width: 40%;
     border: 1px solid #BFBFBF;
     border-radius: 20px;
-
 }
 
 input[type=text] {
@@ -76,30 +73,28 @@ input[type=text] {
     margin: 8px 0;
 }
 
-/* Inicia el cuerpo de la pagina */
+/*Jumbotron - hero */
+
 .hero-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     color: #223D40;
     font-family: 'Kanit', sans-serif;
-}
+    }
 
 .header-second {
     padding: 10px;
     text-align: center;
     align-self: center center;
     font-size: large;
-}
+    }
 
 .hero {
-
     width: 100%;
     height: 60vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     color: #223D40;
     background-image: url("../Media/banner.jpg");
@@ -118,16 +113,13 @@ input[type=text] {
 .hero .btn {
     display: block;
     width: 500px;
-
     padding: 1em;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-
     color: #223D40;
     text-decoration: none;
     font-size: 1em;
-
     border: 5px solid #BFBFBF;
     border-radius: 20px;
 }
@@ -147,19 +139,24 @@ input[type=text] {
     width: 100%;
 }
 
+/*Productos - Servicios*/
+
 .product-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 10px;
 }
-
 .text-justify {
     text-align: justify;
     font-family: 'Kanit', sans-serif;
 }
 
+.card img {
+    height: 250px;
+}
 
+/*Adicionales*/
 
 .additional-wrapper {
     display: grid;
@@ -167,6 +164,8 @@ input[type=text] {
     background-color: #04BFAD;
     color: #223D40;
 }
+
+/* Footer */
 
 .footer-wrapper {
     margin-top: 0rem;
@@ -199,7 +198,6 @@ input[type=text] {
         grid-gap: 10px;
         padding: 10px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -209,28 +207,16 @@ input[type=text] {
         position: relative;
     }
 
-    .header-logo,
-    .header-title,
-    .header-input {
-        text-align: center;
-    }
-
-
-    .card img {
-        height: 250px;
-    }
-
-
-    .product-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        padding: 10px;
-    }
 
 }
 
-/* Empieza el registro */
+
+
+
+
+
+
+/* Empieza el formato de registro */
 
 form {
     /* Centrar el formulario en la página */
