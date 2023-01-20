@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 80px 1fr 1fr 1fr;
     grid-template-rows: 5rem;
-    position: left center right right;
+    position: left left right right;
     width: 100%;
     background-color: #04BFAD;
     color: #223D40;
@@ -39,8 +39,9 @@
     cursor: pointer;
     display: inline;
     text-align: left;
-    align-self: center center;
+    align-self: left left;
     font-size: large;
+    margin: auto;
 }
 
 .header-registro {
@@ -167,7 +168,7 @@ input[type=text] {
     color: #223D40;
 }
 
-footer {
+.footer-wrapper {
     margin-top: 0rem;
     background-color: #04BFAD;
     color: #223D40;
