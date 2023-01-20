@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
 
 /* Definicion de tipo de letra para la pagina */
 * {
     padding: 0;
     margin: 0;
-  }
+    font-family: 'Hind Madurai', sans-serif;
+}
 
 /* Definiendo caracteristicas del header */
 .header-wrapper {
     display: grid;
-    grid-template-columns: 80px 1fr 1fr;
+    grid-template-columns: 80px 1fr 1fr 1fr;
     grid-template-rows: 5rem;
-    position: left center right;
+    position: left center right right;
     width: 100%;
     background-color: #04BFAD;
     color: #223D40;
-    font-family: 'Shadows Into Light', cursive;
 }
 
 .imagen-full {
@@ -31,21 +29,43 @@
 }
 
 .header-logo {
+    cursor: pointer;
     padding: 10px;
     text-align: left;
 }
 
 .header-tittle {
     padding: 10px;
+    cursor: pointer;
+    display: inline;
     text-align: left;
     align-self: center center;
     font-size: large;
 }
 
+.header-registro {
+    padding: 10px;
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+    align-self: center center;
+    margin: auto;
+    width: 40%;
+    border: 1px solid #BFBFBF;
+    border-radius: 20px;
+
+}
+
+
 .header-input {
     padding: 10px;
-    text-align: right;
+    display: inline;
+    text-align: center;
     align-self: center;
+    margin: auto;
+    width: 40%;
+    border: 1px solid #BFBFBF;
+    border-radius: 20px;
 
 }
 
@@ -99,7 +119,7 @@ input[type=text] {
     width: 500px;
 
     padding: 1em;
-    margin-top:60px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
 
@@ -278,5 +298,5 @@ button {
     /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
        entre las etiquetas y sus campos de texto */
     margin-left: .5em;
-    
+
 }
