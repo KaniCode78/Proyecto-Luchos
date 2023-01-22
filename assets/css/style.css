@@ -260,16 +260,182 @@ button{
     font-weight: bold;
   }
 
+/* Diseñando el footer */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    background-color: #4EBFBF;
+    color: #223D40;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #223D40;
+}
+a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: #223D40;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container {
+    flex: 1;    /* same as flex-grow: 1; */
+}
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color: #4EBFBF;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #4EBFBF;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.menu-footer-grid {
+    grid-template-areas: 
+        "logo nav1 nav2 nav3 nav4"
+        "moz moz moz moz"
+        "legal legal legal legal . ";
+    grid-template-columns: minmax(260px, 2fr) repeat(4,minmax(0,1fr));
+}
+
+.menu-footer-nav-col1{
+    grid-area: nav1;
+    grid-row-start: nav1;
+    grid-row-end: nav1;
+    grid-column-start: nav1;
+    grid-column-end: nav1;
+}
+.menu-nav-heading {
+    font: var(--type-smaller-font-size);
+    margin: 0 0 .5rem;
+}
+
+.menu-footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.menu-footer-nav-item {
+    font-size: var(--type-smaller-font-size);
+  }
+
+*/
+
+
+
+
+
+/*
 
 .footer-wrapper {
     margin-top: 0rem;
     background-color: #4EBFBF;
     color: #223D40;
     text-align: left;
+    padding: 2rem 1rem;
+    position: relative;
 }
 
-.footer-p {
-    font-size: 30px;
+.pafooter-wrapper {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Hind Madurai', sans-serif;
 }
 
 .social-wrapper {
@@ -283,7 +449,27 @@ button{
 .network-img {
     height: 4rem;
 }
+*/
+.logoimg-wrapper {
+   text-align: center;
+}
 
+.logo-img{
+    height: 4rem;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+.condiciones-wrapper {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+
+/*
+/* Responsive */
 
 @media screen and (max-width: 1200px) {
     .product-wrapper {
@@ -329,7 +515,8 @@ button{
     }
 
 
-}
+
+
 
 /* Empieza el registro */
 
