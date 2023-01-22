@@ -188,6 +188,19 @@ h4 {
     flex: auto;
 }
 
+.flex-adicionales1 .card2 img {
+    padding: 2rem;
+    height: auto;
+    width: auto;
+    
+}
+
+.imagen-full2 {
+    width: 100%;
+}
+
+
+
 .flex-adicionales2 {
     background-color: #4EBFBF;
     width: 200px;
