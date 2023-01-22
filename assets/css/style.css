@@ -175,7 +175,7 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    grid-auto-rows: 500px 500px;
+    grid-auto-rows: 300px 300px;
     grid-template-areas:
         "adicionales1 adicionales2";
     /*position: center center;*/
@@ -185,14 +185,6 @@ h4 {
     background-color: #4EBFBF;
     color: #223D40;
 }
-
-/*.flex-container {
-    display: flex;
-    background-color: #4EBFBF;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}*/
 
 .adicionales1-wrapper {
     display: grid;
@@ -206,18 +198,6 @@ h4 {
     justify-self: center;
 }
 
-/* .flex-adicionales1 .card2 img {
-    padding: 2rem;
-    height: auto;
-    width: auto;
-
-}
-
-.imagen-full2 {
-    width: 100%;
-} */
-
-
 .adicionales2.wrapper {
     display: grid;
     background-color: #4EBFBF;
@@ -228,8 +208,6 @@ h4 {
     font-size: 14px;
     align-self: center;
     justify-self: center;
-
-
 }
 
 h2 {
@@ -283,25 +261,11 @@ button{
   }
 
 
-
-
-
-/* .boletin{
-    background-color: white;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-} */
-
-
-
 .footer-wrapper {
     margin-top: 0rem;
     background-color: #4EBFBF;
     color: #223D40;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-p {
@@ -310,8 +274,8 @@ button{
 
 .social-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 1px;
     padding: 10px;
     align-self: center;
 }
