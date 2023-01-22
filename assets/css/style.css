@@ -8,6 +8,7 @@
     font-family: 'Hind Madurai', sans-serif;
 }
 
+
 /* Definiendo caracteristicas del header */
 .header-wrapper {
     display: grid;
@@ -34,6 +35,12 @@
     text-align: left;
 }
 
+a:link, a:visited, a:active {
+    color: #223D40;
+    text-decoration:none;
+    font-size: larger;
+}
+
 .header-tittle {
     padding: 10px;
     cursor: pointer;
@@ -45,25 +52,29 @@
 }
 
 .novedades {
-    text-decoration: none;
+    color: #223D40;
     padding: 10px;
+    cursor: pointer;
     display: inline;
     text-align: center;
     align-self: center;
+    font-weight: bold;
     margin: auto;
     width: 40%;
-    color: #223D40;
 }
 
 
 .registro {
+    color: #223D40;
     padding: 10px;
     cursor: pointer;
     display: inline;
     text-align: center;
     align-self: center center;
+    font-weight: bold;
     margin: auto;
     width: 40%;
+    text-decoration: none;
     color: #223D40;
 }
 
@@ -84,15 +95,12 @@ input[type=text] {
 }
 
 .hero {
-
     width: 100%;
     height: 60vh;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
+    justify-content: left;
+    align-items: end;
+    text-align: left;
     color: #223D40;
     background-image: url("../Media/banner.jpg");
     background-color: #223D40;
@@ -102,26 +110,28 @@ input[type=text] {
 }
 
 .hero h1 {
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 0;
     transition: 0.5s;
+    text-align: left;
+    display: grid;
+    width: auto;
+    padding-left: .3em;
 }
 
-.hero .btn {
-    display: block;
-    width: 500px;
-
-    padding: 1em;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-
+.hero .parra {
     color: #223D40;
-    text-decoration: none;
-    font-size: 1em;
+    font-size: 2em;
+    text-align: left;
+    display: grid; 
+    width: auto;
+    padding: 1em;
+    /* margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto; */
 
-    border: 5px solid #BFBFBF;
-    border-radius: 20px;
+    /* border: 5px solid #BFBFBF;
+    border-radius: 20px; */
 }
 
 .card {
@@ -138,12 +148,19 @@ input[type=text] {
     height: 350px;
     width: 100%;
 }
-.servicios {
+.servicios p {
     padding: 10px;
     text-align: center;
     align-self: center center;
-    font-size: large;
+    font-size: 40px;
+    font-weight: bold;
 }
+
+h4{
+    font-size: 20px;
+    font-weight: bold; 
+}
+
 .product-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -152,7 +169,7 @@ input[type=text] {
 }
 
 .text-justify {
-    text-align: justify;
+    text-align: ;
     font-family: 'Kanit', sans-serif;
 }
 
