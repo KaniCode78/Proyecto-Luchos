@@ -16,7 +16,7 @@
     grid-template-rows: 5rem;
     position: left left right right;
     width: 100%;
-    background-color: #04BFAD;
+    background-color: #4EBFBF;
     color: #223D40;
 }
 
@@ -35,9 +35,11 @@
     text-align: left;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
     color: #223D40;
-    text-decoration:none;
+    text-decoration: none;
     font-size: larger;
 }
 
@@ -123,19 +125,13 @@ input[type=text] {
     color: #223D40;
     font-size: 2em;
     text-align: left;
-    display: grid; 
+    display: grid;
     width: auto;
     padding: 1em;
-    /* margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto; */
-
-    /* border: 5px solid #BFBFBF;
-    border-radius: 20px; */
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0;
     transition: 0.3s;
 }
 
@@ -144,11 +140,12 @@ input[type=text] {
 }
 
 .card img {
-    border-radius: 5px 5px 0 0;
     height: 350px;
     width: 100%;
 }
+
 .servicios p {
+
     padding: 10px;
     text-align: center;
     align-self: center center;
@@ -156,35 +153,54 @@ input[type=text] {
     font-weight: bold;
 }
 
-h4{
+h4 {
     font-size: 20px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.product-wrapper {
+.servicios-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 0px;
 }
 
 .text-justify {
-    text-align: ;
+    text-align: justify;
     font-family: 'Kanit', sans-serif;
 }
 
+.flex-container {
+    display: flex;
+    background-color: #4EBFBF;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
+.flex-adicionales1 {
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 14px;
+    flex: auto;
+}
 
-.additional-wrapper {
-    display: grid;
-    padding: 10px;
-    background-color: #04BFAD;
-    color: #223D40;
+.flex-adicionales2 {
+    background-color: #223D40;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 14px;
+    flex: auto;
 }
 
 .footer-wrapper {
     margin-top: 0rem;
-    background-color: #04BFAD;
+    background-color: #4EBFBF;
     color: #223D40;
     text-align: center;
 }
@@ -242,6 +258,14 @@ h4{
         padding: 10px;
     }
 
+    .additional-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+
 }
 
 /* Empieza el registro */
@@ -254,7 +278,7 @@ form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
-    background-color: #04BFAD;
+    background-color: #4EBFBF;
 }
 
 ul {
