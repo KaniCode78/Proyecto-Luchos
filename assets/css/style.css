@@ -44,7 +44,19 @@
     margin: auto;
 }
 
-.header-registro {
+.novedades {
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    width: 40%;
+    color: #223D40;
+}
+
+
+.registro {
     padding: 10px;
     cursor: pointer;
     display: inline;
@@ -52,23 +64,10 @@
     align-self: center center;
     margin: auto;
     width: 40%;
-    border: 1px solid #BFBFBF;
-    border-radius: 20px;
-
+    color: #223D40;
 }
 
 
-.header-input {
-    padding: 10px;
-    display: inline;
-    text-align: center;
-    align-self: center;
-    margin: auto;
-    width: 40%;
-    border: 1px solid #BFBFBF;
-    border-radius: 20px;
-
-}
 
 input[type=text] {
     width: 50%;
@@ -82,13 +81,6 @@ input[type=text] {
     grid-template-columns: 1fr;
     color: #223D40;
     font-family: 'Kanit', sans-serif;
-}
-
-.header-second {
-    padding: 10px;
-    text-align: center;
-    align-self: center center;
-    font-size: large;
 }
 
 .hero {
@@ -146,7 +138,12 @@ input[type=text] {
     height: 350px;
     width: 100%;
 }
-
+.servicios {
+    padding: 10px;
+    text-align: center;
+    align-self: center center;
+    font-size: large;
+}
 .product-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
