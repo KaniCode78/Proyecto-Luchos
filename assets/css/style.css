@@ -412,11 +412,12 @@ input[type="submit"] {
     padding: 1rem;
     text-align: center;
     font-family: 'Hind Madurai', sans-serif;
+}
 
 
     /* Responsive */
 
-    @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px){
         .product-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -426,7 +427,7 @@ input[type="submit"] {
 
     
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
         .header-wrapper {
             grid-template-columns: 1fr;
             grid-template-rows: 5rem 5rem 5rem;
@@ -517,4 +518,3 @@ input[type="submit"] {
         button {
             margin-left: .5em;
         }
-            
