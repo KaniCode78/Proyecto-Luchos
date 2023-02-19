@@ -10,14 +10,15 @@
 
 
 /* Definiendo caracteristicas del header */
-.header-wrapper {
+.nav-wrapper {
     display: grid;
     grid-template-columns: 80px 1fr 1fr 1fr;
     grid-template-rows: 5rem;
     position: left left right right;
     width: 100%;
-    background-color: #4EBFBF;
     color: #223D40;
+    background-color: #4EBFBF;
+
 }
 
 .imagen-full {
@@ -33,6 +34,7 @@
     cursor: pointer;
     padding: 10px;
     text-align: left;
+    background-color: #4EBFBF
 }
 
 a:link,
@@ -105,10 +107,29 @@ input[type=text] {
     text-align: left;
     color: #223D40;
     background-image: url("../Media/banner.jpg");
-    background-color: #223D40;
+    background-color: #4EBFBF;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat, repeat;
+}
+
+
+@media(max-width:600px) {
+    .hero {
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media(max-width:600px) {
+    .hero-inner {
+        z-index: 0;
+        background-color: #f4a020;
+          }
 }
 
 .hero h1 {
@@ -153,6 +174,12 @@ input[type=text] {
     font-weight: bold;
     color: #223D40;
 }
+@media(max-width:600px) {
+    .servicios {
+        position:relative;
+        top:8rem;
+    }
+}
 
 h4 {
     font-size: 20px;
@@ -164,6 +191,13 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 0px;
+}
+
+@media(max-width:600px) {
+    .servicios-wrapper {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .text-justify {
@@ -415,22 +449,15 @@ input[type="submit"] {
 }
 
 
-    /* Responsive */
+/* Responsive */
 
-@media screen and (max-width: 1200px){
-        .product-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
-            padding: 10px;
-        }
-
-@media screen and (max-width: 768px) {
-        .header-wrapper {
-            grid-template-columns: 1fr;
-            grid-template-rows: 5rem 5rem 5rem;
-            position: relative;
-        }
+@media screen and (max-width: 1200px) {
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
 
         .header-logo,
         .header-title,
@@ -516,3 +543,5 @@ input[type="submit"] {
         button {
             margin-left: .5em;
         }
+    }
+}

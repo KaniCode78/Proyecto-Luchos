@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+
+
+/* Definicion de tipo de letra para la pagina */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind Madurai', sans-serif;
+    background-color: #4EBFBF;
+    color: #223D40;
+
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #223D40;
+    text-decoration: none;
+    font-size:small;
+}
+
+.btn{
+    background-color: #BFBFBF;
+    color: #223D40;
+    border: none;
+}
+
+.d-flex{
+    font-size: small;
+}
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
