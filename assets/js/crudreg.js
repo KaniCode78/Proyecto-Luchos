@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data.length) {
             document.getElementById("noData").remove();
         }
-        data.forEach((item, index) => {
-            const tr = document.createElement("tr");
+        data.forEach((mascotas, index) => {
+            let tr = document.createElement("tr");
             tr.innerHTML = `
                 <td>${index + 1}</td>
-                <td>${"item.peludo"}</td>
-                <td>${"item.sexo"}</td>
-                <td>${"item.edad"}</td>
-                <td>${"item.raza"}</td>
-                <td>${"item.color"}</td>
-                <td>${"item.seguro"}</td>
-                <td>${"item.sena"}</td>
+                <td>${"mascotas.peludo"}</td>
+                <td>${"mascotas.sexo"}</td>
+                <td>${"mascotas.edad"}</td>
+                <td>${"mascotas.raza"}</td>
+                <td>${"mascotas.color"}</td>
+                <td>${"mascotas.seguro"}</td>
+                <td>${"mascotas.sena"}</td>
                 <td class="text-center">
                     <button type="button" class="btn btn-warning btn-edit" data-index="${index}">Editar</button>
                     <button type="button" class="btn btn-danger btn-delete" data-index="${index}">Eliminar</button>
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    function clearForm() {
+    const clearForm = () => {
         inputNmascota.value = "";
         inputSexo.value = "";
         inputEdad.value = "";
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputSenas.value = "";
     }
 
-    saveBtn.addEventListener("click", function () {
+    saveBtn.addEventListener("click", () => {
         const peludo = inputNmascota.value;
         const sexo = inputSexo.value;
         const edad = inputEdad.value;
