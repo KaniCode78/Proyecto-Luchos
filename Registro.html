@@ -6,51 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Pet</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
-<!-- Este es el header -->
-<div>
-    <header class="header-wrapper">
-        <div class="header-logo">
-           <a href="index.html"> <img class="logo" src="assets/Media/logobyn.png" alt="logo"></a>
-        </div>
 
-        <div class="header-tittle">
-            <h1>Hero Pet</h1>
-        </div>
+<body>
 
-        <div class="header-input">
-            <input type="text" placeholder="Buscar">
-        </div>
+    <!-- Header se mantenien en toda las paginas -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/Media/Logo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">We Love Dogs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Registro.html">Registro</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Hero Pet
+                    </span>
+                </div>
+            </div>
+        </nav>
     </header>
+<!-- Inicia el registro de la pagina -->
+    <hero>
+        <section class="vh-100">
+            <div class="container-fluid h-custom">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="/assets/Media/dogregistrogris.png"
+                            class="img-fluid" alt="Sample image">
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                        <form>
+                            <div
+                                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                                <p class="lead fw-normal mb-0 me-3">Inicia Sesion con:</p>
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
 
-    <body>
-        <div class="form-styles" scr="estilo">
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <p>Informacion Personal</p>
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="user_name">
-                    </li>
-                    <li>
-                        <label for="Apellido">apellido</label>
-                        <input type="text" id="apellido" name="last_name">
-                    </li>
-                    <li>
-                        <p>Informacion de Contacto</p>
-                        <label for="mail">Mail</label>
-                        <input type="email" id="mail" name="user_mail">
-                    </li>
-                    <li>
-                        <label for="celular">Celular</label>
-                        <input type="celular" id="cel" name="user_cel">
-                    </li>
-                    <li class="button">
-                        <button type="submit">Crea tu Registro</button>
-                    </li>
-                </ul>
-            </form>
-            <p><a href="index.html">Regresar al inicio</a>.</p>
-          </div>
-    </body>
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                            </div>
+
+                            <div class="divider d-flex align-items-center my-4">
+                                <p class="text-center fw-bold mx-3 mb-0">O</p>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form3Example3" class="form-control form-control-lg"
+                                    placeholder="Ingresa un correo valido" />
+                                <label class="form-label" for="form3Example3">Email</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-3">
+                                <input type="password" id="form3Example4" class="form-control form-control-lg"
+                                    placeholder="Ingresa tu contraseña" />
+                                <label class="form-label" for="form3Example4">Contraseña </label>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Checkbox -->
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                    <label class="form-check-label" for="form2Example3">
+                                        Recordar
+                                    </label>
+                                </div>
+                                <a href="#!" class="text-body">Olvidaste tu Mail?</a>
+                            </div>
+
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <button type="button" class="btn btn-primary btn-lg"
+                                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                                <p class="small fw-bold mt-2 pt-1 mb-0">Aun no das de alta a tu peludo ? <a href="#!"
+                                        class="link"> Registralo </a></p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 ">
+                <!-- Copyright -->
+                <div class="text-white mb-3 mb-md-0">
+                    Copyright © 2022. Kaniltazo Code.
+                </div>
+                <!-- Copyright -->
+
+                <!-- Right -->
+                <div>
+                    <a href="#!" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#!" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#!" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#!" class="text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </div>
+        </section>
+    </hero>
+</body>
+
+</html>
