@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data.length) {
             document.getElementById("noData").remove();
         }
-        data.forEach((mascotas, index) => {
+        data.forEach(({peludo, sexo, edad, raza, color, seguro, sena}, index) => {
             let tr = document.createElement("tr");
             tr.innerHTML = `
                 <td>${index + 1}</td>
-                <td>${"mascotas.peludo"}</td>
-                <td>${"mascotas.sexo"}</td>
-                <td>${"mascotas.edad"}</td>
-                <td>${"mascotas.raza"}</td>
-                <td>${"mascotas.color"}</td>
-                <td>${"mascotas.seguro"}</td>
-                <td>${"mascotas.sena"}</td>
+                <td>${peludo}</td>
+                <td>${sexo}</td>
+                <td>${edad}</td>
+                <td>${raza}</td>
+                <td>${color}</td>
+                <td>${seguro}</td>
+                <td>${sena}</td>
                 <td class="text-center">
                     <button type="button" class="btn btn-warning btn-edit" data-index="${index}">Editar</button>
                     <button type="button" class="btn btn-danger btn-delete" data-index="${index}">Eliminar</button>
