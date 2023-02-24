@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data.length) {
             document.getElementById("noData").remove();
         }
-        data.forEach(({peludo, sexo, edad, raza, color, seguro, sena}, index) => {
+        data.forEach(({peludo, sexo, edad, raza, color, seguro, senas}, index) => {
             let tr = document.createElement("tr");
             tr.innerHTML = `
                 <td>${index + 1}</td>
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${raza}</td>
                 <td>${color}</td>
                 <td>${seguro}</td>
-                <td>${sena}</td>
+                <td>${senas}</td>
                 <td class="text-center">
                     <button type="button" class="btn btn-warning btn-edit" data-index="${index}">Editar</button>
                     <button type="button" class="btn btn-danger btn-delete" data-index="${index}">Eliminar</button>

@@ -55,17 +55,10 @@ a:active {
 
 
 
+
 .imagen-full {
     width: 100%;
 }
-
-.logo {
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
 
 .header-tittle {
     padding: 10px;
@@ -186,6 +179,12 @@ input[type=text] {
     height: 350px;
     width: 100%;
 }
+
+
+.servicios{
+    background-color: #4EBFBF;
+}
+
 
 .servicios p {
 
@@ -566,4 +565,3 @@ input[type="submit"] {
             margin-left: .5em;
         }
     }
-}

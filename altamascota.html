@@ -14,42 +14,98 @@
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
+<!-- <header>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/Media/Logo.png" alt="Bootstrap" width="30" height="24">
+        </a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">We Love Dogs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Registro.html">Registro</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Hero Pet
+                </span>
+            </div>
+        </div>
+    </nav>
+</header> -->
+
+
+<header>
+    <div>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/Media/Logo.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        We Love Dogs
+                    </a>
+                </div>
+            </nav>
+            <a class="navbar-brand" href="/altamascota.html">CRUD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bienvenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/registro.html">Registrate</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lo que hay para tu Perruno
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Carnet Perruna</a></li>
+                                <li><a class="dropdown-item" href="#">Cuidados para tu MAascota</a></li>
+                                <li><a class="dropdown-item" href="#">Adopta</a></li>
+                                <li><a class="dropdown-item" href="#">Hero Alert</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Unete a nuestra Red</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    </header>
+
+
+
 <body data-bs-theme="dark">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+    <div class="row">
             <div class="col-md-6">
                 <button type="button" class="btn btn-success mt-3" id="changeThemeBtn">Cambiar tema</button>
             </div>
         </div>
-
-        <!-- Header se mantenien en toda las paginas -->
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/Media/Logo.png" alt="Bootstrap" width="30" height="24">
-                </a>
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">We Love Dogs</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Registro.html">Registro</a>
-                            </li>
-                        </ul>
-                        <span class="navbar-text">
-                            Hero Pet
-                        </span>
-                    </div>
-                </div>
-            </nav>
-        </header>
         <!-- Inicia el registro de las mascotas -->
         <div class="container">
             <div class="row">
@@ -58,7 +114,7 @@
                     <form>
                         <div class="form-group">
                             <label for="inputName">Peludo</label>
-                            <input type="text" class="form-control" id="inputNmascota" placeholder="Lucho">
+                            <input type="text" class="form-control" id="inputNmascota" placeholder="Nombre de la mascota">
                             <label for="inputPuesto">Sexo</label>
                             <input type="text" class="form-control" id="inputSexo" placeholder="Hembra / Macho">
                             <label for="inputPuesto">Edad</label>
@@ -90,7 +146,7 @@
                                 <th>Raza</th>
                                 <th>Color</th>
                                 <th>Seguro</th>
-                                <th>Seña</th>
+                                <th>Señas</th>
                                 <th class="text-center">Acciones</th>
                             </tr>
                         </thead>
@@ -100,12 +156,7 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- Right -->
-
-
-
+    </div>
 </body>
 <script src="/assets/js/crudreg.js"></script>
 
